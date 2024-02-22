@@ -6,7 +6,7 @@
 /*   By: jadithya <jadithya@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/18 23:59:55 by jadithya          #+#    #+#             */
-/*   Updated: 2024/02/20 22:17:40 by jadithya         ###   ########.fr       */
+/*   Updated: 2024/02/22 20:48:01 by jadithya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,4 +120,14 @@ Bureaucrat::GradeTooLowException::~GradeTooLowException() throw() {
 
 const char* Bureaucrat::Bureaucrat::GradeTooLowException::what() const throw() {
 	return (what_msg.c_str());
+}
+
+void Bureaucrat::signForm(Form &f) {
+	try {
+		f.beSigned(*this);
+		std::cout << this->name << " signed " << name << std::endl;
+	}
+	catch (std::exception &e) {
+		std::cout << this->name << " couldn't sign " << name << " because " << e.what() << std::endl;
+	}
 }
