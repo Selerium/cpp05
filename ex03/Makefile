@@ -6,7 +6,7 @@
 #    By: jadithya <jadithya@student.42abudhabi.ae>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/15 18:23:29 by jadithya          #+#    #+#              #
-#    Updated: 2024/02/23 14:51:47 by jadithya         ###   ########.fr        #
+#    Updated: 2024/02/25 14:43:22 by jadithya         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ OS := ${shell uname}
 
 CC := c++
 
-NAME := MoreForms
+NAME := Interns
 
 CXXFLAGS := -Wall -Wextra -Werror -g3 -std=c++98
 
